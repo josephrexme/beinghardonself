@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h1>Is <span id="person"></span> being hard on themself?</h1>
+  <h2><span id="answer"></span></h2>
+  <script>
+    const url = new URLSearchParams(window.location.search);
+    const n = url.get('n');
+    person.textContent = n;
+    answer.textContent = n.toLowerCase() === 'gerald' ? 'Yes' : 'No';
+  </script>
+</body>
+</html>
